@@ -206,9 +206,9 @@ function rnlAspect(elmId, width, height, dimension, aspect, tb) -- dimension = "
 			end
 		end
 	end
-	print("Parse Error: invalid argument at "..tb[0].."#"..elmId)
-	parseError = true
-	return
+	--print("Parse Error: invalid argument at "..tb[0].."#"..elmId)
+	--parseError = true
+	--return
 end
 
 function rnlWidth()
@@ -287,7 +287,6 @@ local function parse(tbl, parent)
 							data["width"] = r
 						end
 					end
-				end
 				elseif k == "rnl-width" then
 					--tbl.rnl-width = nil
 				elseif k == "rnl-height" then
